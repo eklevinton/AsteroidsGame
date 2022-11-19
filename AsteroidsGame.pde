@@ -36,7 +36,6 @@ public void keyPressed() {
   
   if (keyPressed) {
     if (key == CODED){
-    
     if (keyCode == LEFT) { 
       piggy.turn(-4);
       piggy.right(true);
@@ -67,7 +66,8 @@ public void keyPressed() {
    
    
   // if (key == CODED){
-     if (key == DOWN){
+  if (key == CODED){
+     if (keyCode == DOWN){
        piggy.hyperspace();
      }
    
@@ -76,3 +76,4 @@ public void keyPressed() {
   
   }
   
+}
