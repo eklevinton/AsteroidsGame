@@ -64,21 +64,17 @@ public void keyPressed() {
     }
     }
    
-}
-//  if (key == CODED){
- // if (keyCode == DOWN){
- //      piggy.hyperspace();
- //      piggy.moving(true);
- //      }else{
-//       piggy.moving(false);
- //      
- //    } 
-//  }
-//  }
-// }
 
-public void mousePressed() {
-  if (mousePressed && mouseButton == RIGHT)
-    piggy.hyperspace();
+ if (key == CODED){
+  if (keyCode == DOWN){
+     piggy.hyperspace();
+      piggy.moving(true);
+      }else{
+      piggy.moving(false);
+    
+    } 
+ }
+ }
+ 
 }
 
