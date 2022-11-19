@@ -64,8 +64,6 @@ public void keyPressed() {
     }
     }
    
- piggy.move();
-  piggy.show();
 }
 //  if (key == CODED){
  // if (keyCode == DOWN){
