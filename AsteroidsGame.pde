@@ -67,7 +67,7 @@ public void keyPressed() {
    
 
   if (key == CODED){
-  if (keyCode == " "){
+  if (keyCode == RETURN){
        piggy.hyperspace();
        piggy.moving(true);
        }else{
