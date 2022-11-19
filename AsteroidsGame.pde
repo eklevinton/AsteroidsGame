@@ -65,16 +65,18 @@ public void keyPressed() {
     }
    
    
-  // if (key == CODED){
+
   if (key == CODED){
   if (keyCode == DOWN){
        piggy.hyperspace();
+       piggy.traveling(true);
+       }else{
+       piggy.traveling(false);
+       
      }
    
   
   }
   
   }
-  
 
-}
