@@ -38,7 +38,6 @@ public void keyPressed() {
     if (key == CODED){
     
     if (keyCode == LEFT) { 
-      System.out.println("left");
       piggy.turn(-4);
       piggy.right(true);
     } 
