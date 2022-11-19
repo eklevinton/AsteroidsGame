@@ -1,21 +1,30 @@
-class Floater //Do NOT modify the Floater class! Make changes in the Spaceship class 
+public class Floater //Do NOT modify the Floater class! Make changes in the Spaceship class 
 {   
+  
   protected int corners;  //the number of corners, a triangular floater has 3   
   protected int[] xCorners;   
   protected int[] yCorners;   
   protected int myColor;   
   protected double myCenterX, myCenterY; //holds center coordinates   
   protected double myXspeed, myYspeed; //holds the speed of travel in the x and y directions   
-  protected double myPointDirection; //holds current direction the ship is pointing in degrees    
+  protected double myPointDirection; //holds current direction the ship is pointing in degrees 
+  
+  
+  protected double myDirectionX;
+  protected double myDirectionY;
+  
 
   //Accelerates the floater in the direction it is pointing (myPointDirection)   
+  
   public void accelerate (double dAmount)   
   {          
     //convert the current direction the floater is pointing to radians    
-    double dRadians =myPointDirection*(Math.PI/180);     
+    double dRadians =myPointDirection*(Math.PI/180);   
+    
+    
     //change coordinates of direction of travel    
     myXspeed += ((dAmount) * Math.cos(dRadians));    
-    myYspeed += ((dAmount) * Math.sin(dRadians));       
+    myYspeed += ((dAmount) * Math.sin(dRadians));  
   }   
   public void turn (double degreesOfRotation)   
   {     
@@ -49,8 +58,7 @@ class Floater //Do NOT modify the Floater class! Make changes in the Spaceship c
   }   
   public void show ()  //Draws the floater at the current position  
   {             
-    fill(myColor);   
-    stroke(myColor);    
+      
     
     //translate the (x,y) center of the ship to the correct position
     translate((float)myCenterX, (float)myCenterY);
@@ -72,5 +80,9 @@ class Floater //Do NOT modify the Floater class! Make changes in the Spaceship c
     //"unrotate" and "untranslate" in reverse order
     rotate(-1*dRadians);
     translate(-1*(float)myCenterX, -1*(float)myCenterY);
+    
+    
+   
+    
   }   
-} 
+}
