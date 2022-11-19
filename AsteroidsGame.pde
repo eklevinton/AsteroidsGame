@@ -69,11 +69,12 @@ public void keyPressed() {
   //if (keyCode == DOWN){
   if (key == 'w' || key == 'W'){
      piggy.hyperspace();
-      piggy.moving(true);
-      }else{
-      piggy.moving(false);
+ //     piggy.moving(true);
+  //    }else{
+  //    piggy.moving(false);
     
-    } 
+ //   } 
+ 
  }
  }
  
