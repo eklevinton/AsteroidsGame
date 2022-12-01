@@ -46,7 +46,8 @@ corners = 11;
   myCenterY = (Math.random()*580);
    myXspeed= 0;
    myYspeed = 0;
-   myPointDirection = 1;
+   //myPointDirection = 1;
+   myPointDirection = (Math.random()*580);
  }
  
  
