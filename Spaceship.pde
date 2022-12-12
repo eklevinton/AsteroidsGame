@@ -6,13 +6,13 @@ public class Spaceship extends Floater
     //constructor code needs to be public:
     public Spaceship(){
      
-//easiest model:
+//   easiest model:
     
   //  xCorners = new int [] {-8, 16, -8, -2};
   //  yCorners = new int [] {-8, 0, 8, 0};
  
  
- //different spaceship I designed:
+ //   different spaceship I designed:
  
 //  corners = 13;
   
