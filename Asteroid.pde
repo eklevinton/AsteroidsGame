@@ -1,5 +1,7 @@
 public class Asteroids extends Floater
 {
+  public String katyaa() {return "Asteroids";}
+  
   private double rotSpeed, mySize;
   private int myColor;
   public Asteroids(){
@@ -70,4 +72,32 @@ public class Asteroids extends Floater
     rotate(-1*dRadians);
     translate(-1*(float)myCenterX, -1*(float)myCenterY);
   }   
+}
+
+
+class SmallAsteroid extends Asteroids
+{
+  public String katyaa() {return "SmallAsteroid";}
+
+  public SmallAsteroid(Asteroids rock)
+  {
+    //star asteroid code
+//corners = 10;
+//  xCorners = new int [] {15, 6, 0, -6, -15, -6, -11, 0, 11, 6};
+ // yCorners = new int [] {5, 5, 15, 5, 5, -4, -14, -8, -14, -4};
+ 
+ corners = 3;
+ xCorners = new int [] {14, 0, -14};
+ yCorners = new int [] {0, 14, 0};
+  //  myCenterX = (float)(Math.random()*1000);
+  //  myCenterY = (float)(Math.random()*800);
+  myCenterX = ((float)(rock.getX()));
+  myCenterY = ((float)(rock.getY()));
+    myXspeed = (Math.random()*3)-2;
+    myYspeed = (Math.random()*3)- 2;
+    myDirectionX = ((Math.random()*2)-1);
+    myDirectionY = ((Math.random()*2)-1);
+    myPointDirection = 0;
+
+}
 }
