@@ -169,7 +169,7 @@ for (int i = 0; i < starss.length; i++)
  
      if (key == ' ')
     {
-      shot.add(new Bullet(KATYA));
+      shot.add(new Bullet(piggy));
       
     }
     
