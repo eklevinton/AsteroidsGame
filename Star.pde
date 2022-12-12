@@ -24,6 +24,3 @@ Star() {
     
  //end code
     
-   
-
-  
